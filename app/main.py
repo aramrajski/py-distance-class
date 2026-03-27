@@ -14,7 +14,7 @@ class Distance:
         return f"Distance: {self.km} kilometers."
 
     def __repr__(self) -> str:
-        return f"Distance(km={self.km}.)"
+        return f"Distance(km={self.km})"
 
     def __iadd__(self, other: Distance | int) -> Distance:
         value_to_add = other.km if isinstance(other, Distance) else other
